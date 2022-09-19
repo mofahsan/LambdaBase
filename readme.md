@@ -1,15 +1,21 @@
 step 1 :- Create your app like you normally do
+
 step 2 :- npm i serverless-http
+
 step 3 :- now add 
 const serverless = require('serverless-http');
 and
 module.exports.handler = serverless(app);
-step 5 :- install serverless CLI :-  npm install -g serverless
-step 6 :-  serverless config credentials --provider aws --key ACCESS_KEY ?secret SECRET_KEY 
+
+step 4 :- install serverless CLI :-  npm install -g serverless
+
+step 5 :-  serverless config credentials --provider aws --key ACCESS_KEY ?secret SECRET_KEY 
 change ACCESS_KEY & SECRET_KEY to actual keys
-step 7 :- create serverless.yml
+
+step 6 :- create serverless.yml
 and write your serverless configuration
-step 8 :-  serverless deploy
+
+step 7 :-  serverless deploy
 your code is deployed and you'll receive endpoints
 
 
