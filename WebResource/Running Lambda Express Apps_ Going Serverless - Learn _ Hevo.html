@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://hevodata.com/learn/lambda-express/ -->
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class="wf-proximanova-n9-active wf-proximanova-n7-active wf-proximanova-n6-active wf-proximanova-n4-active wf-proximanova-n3-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <script src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/3042478099207429" async=""></script><script async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/f.txt"></script><script type="text/javascript" async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/uwt.js.download"></script><script type="text/javascript" async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/insight.min.js.download"></script><script src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/4689644.js.download" type="text/javascript" id="cookieBanner-4689644" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="4689644" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/4689644.js(1).download" type="text/javascript" id="hs-analytics"></script><script async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/analytics.js.download"></script><script async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/gtm.js.download"></script><script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/factors.js.download" async=""></script><script src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/xfg8woa.js.download" type="text/javascript" async=""></script><script>
+  (function () {
+    var config = {
+      kitId: 'xfg8woa',
+      async: true
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function () {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try {
+        Typekit.load(config);
+      } catch (e) {
+      }
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+  <script>
+    window.siteName = 'Learn';
+  </script>
+
+  
+  <!-- HubSpot Embed Code -->
+      <script type="text/javascript" id="hs-script-loader" async="" defer="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/4689644.js(2).download"></script>
+    <script type="text/javascript">
+      window['_hubspot_id'] = '4689644';
+    </script>
+  
+      <script type="text/javascript">
+      window['_hubspot_form_ids'] = JSON.parse('{ "free_trial": "302ad175-927a-4b9b-a214-deb62abd869f", "newsletter": "e337d797-bf4f-44c5-b97c-242e240b949e", "ebook_download": "038e19b9-f058-4c0a-9c3c-878c6a162098" }');
+    </script>
+  
+  
+  
+  
+      <script>
+    window.factors=window.factors||function(){
+      this.q=[];var i=new CustomEvent("FACTORS_QUEUED_EVENT"),n=function(t,e){this.q.push({k:t,a:e}),
+      window.dispatchEvent(i)};return this.track=function(t,e,i){n("track",arguments)},
+      this.init=function(t,e,i){this.TOKEN=t,this.INIT_PARAMS=e,this.INIT_CALLBACK=i,
+      window.dispatchEvent(new CustomEvent("FACTORS_INIT_EVENT"))},this.reset=function(){n("reset",arguments)},
+      this.page=function(t,e){n("page",arguments)},this.updateEventProperties=function(t,e){n("updateEventProperties",arguments)},
+      this.identify=function(t,e){n("identify",arguments)},this.addUserProperties=function(t){n("addUserProperties",arguments)},
+      this.getUserId=function(){n("getUserId",arguments)},this.call=function(){var t={k:"",a:[]};
+      if(arguments&&1<=arguments.length){for(var e=1;e<arguments.length;e++)t.a.push(arguments[e]);
+      t.k=arguments[0]}this.q.push(t),window.dispatchEvent(i)},this.init("5xcv01qgw1q0plhhtfn4i4t2z9bnxydd"),
+      this}(),function(){var t=document.createElement("script");t.type="text/javascript",
+      t.src="https://app.factors.ai/assets/v1/factors.js",t.async=!0,d=document.getElementsByTagName("script")[0],
+      document.head.insertBefore(t,d)}();
+    </script>
+  
+  
+<!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
+<title>Running Lambda Express Apps: Going Serverless - Learn | Hevo</title>
+<meta name="description" content="AWS Lambda allows existing Express applications to be run in a Serverless fashion. Read on to deploy Lambda Express apps using Serverless Framework.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://hevodata.com/learn/lambda-express/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Running Lambda Express Apps: Going Serverless - Learn | Hevo">
+<meta property="og:description" content="AWS Lambda allows existing Express applications to be run in a Serverless fashion. Read on to deploy Lambda Express apps using Serverless Framework.">
+<meta property="og:url" content="https://hevodata.com/learn/lambda-express/">
+<meta property="og:site_name" content="Learn | Hevo">
+<meta property="article:publisher" content="https://www.facebook.com/HevoData/">
+<meta property="article:tag" content="AWS Lambda">
+<meta property="article:tag" content="Express JS">
+<meta property="article:section" content="AWS">
+<meta property="og:updated_time" content="2022-07-04T19:27:32+05:30">
+<meta property="og:image" content="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA">
+<meta property="og:image:secure_url" content="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="Lambda Express Featured Image | Hevo Data">
+<meta property="og:image:type" content="image/png">
+<meta property="article:published_time" content="2022-04-13T17:55:34+05:30">
+<meta property="article:modified_time" content="2022-07-04T19:27:32+05:30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Running Lambda Express Apps: Going Serverless - Learn | Hevo">
+<meta name="twitter:description" content="AWS Lambda allows existing Express applications to be run in a Serverless fashion. Read on to deploy Lambda Express apps using Serverless Framework.">
+<meta name="twitter:site" content="@HevoData">
+<meta name="twitter:creator" content="@HevoData">
+<meta name="twitter:image" content="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Raj Verma">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="9 minutes">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://hevodata.com/learn/#person","name":"Mothi Venkatesh"},{"@type":"WebSite","@id":"https://hevodata.com/learn/#website","url":"https://hevodata.com/learn","name":"Mothi Venkatesh","publisher":{"@id":"https://hevodata.com/learn/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA","url":"https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA","width":"1280","height":"720","caption":"Lambda Express Featured Image | Hevo Data","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://hevodata.com/learn/lambda-express/#webpage","url":"https://hevodata.com/learn/lambda-express/","name":"Running Lambda Express Apps: Going Serverless - Learn | Hevo","datePublished":"2022-04-13T17:55:34+05:30","dateModified":"2022-07-04T19:27:32+05:30","isPartOf":{"@id":"https://hevodata.com/learn/#website"},"primaryImageOfPage":{"@id":"https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://hevodata.com/learn/author/raj-verma/","name":"Raj Verma","url":"https://hevodata.com/learn/author/raj-verma/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c2e341ffadfbefc6292876e60ec142ef?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c2e341ffadfbefc6292876e60ec142ef?s=96&amp;d=mm&amp;r=g","caption":"Raj Verma","inLanguage":"en-US"}},{"@type":"BlogPosting","headline":"Running Lambda Express Apps: Going Serverless - Learn | Hevo","keywords":"Lambda Express","datePublished":"2022-04-13T17:55:34+05:30","dateModified":"2022-07-04T19:27:32+05:30","author":{"@id":"https://hevodata.com/learn/author/raj-verma/"},"publisher":{"@id":"https://hevodata.com/learn/#person"},"description":"AWS Lambda allows existing Express applications to be run in a Serverless fashion. Read on to deploy Lambda Express apps using Serverless Framework.","name":"Running Lambda Express Apps: Going Serverless - Learn | Hevo","@id":"https://hevodata.com/learn/lambda-express/#richSnippet","isPartOf":{"@id":"https://hevodata.com/learn/lambda-express/#webpage"},"image":{"@id":"https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://hevodata.com/learn/lambda-express/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://cdn.hevodata.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://a.omappapi.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://res.cloudinary.com/">
+<link rel="preconnect" href="https://res.cloudinary.com/">
+<link rel="alternate" type="application/rss+xml" title="Learn | Hevo » Feed" href="https://hevodata.com/learn/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn | Hevo » Comments Feed" href="https://hevodata.com/learn/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn | Hevo » Running Lambda Express Apps: Going Serverless Comments Feed" href="https://hevodata.com/learn/lambda-express/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hevodata.com\/learn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/style.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="cbl-css-css" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/cbl-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="widgetopts-styles-css" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/widget-options.css" type="text/css" media="all">
+<link rel="stylesheet" id="codemirror-blocks--css" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/blocks.style.build.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-hevo-starter-bootstrap-css-css" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/application.fb908061b435a02f.css" type="text/css" media="all">
+<script type="text/javascript">
+var CLDLB = {"image_optimization":"on","image_format":"auto","image_quality":"auto","svg_support":"off","image_freeform":"","image_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","video_player":"wp","video_controls":"on","video_loop":"off","video_autoplay_mode":"off","video_optimization":"on","video_format":"auto","video_quality":"auto","video_freeform":"","video_preview":"","use_lazy_load":"on","lazy_threshold":"100px","lazy_custom_color":"rgba(153,153,153,0.5)","lazy_animate":"on","lazy_placeholder":"blur","lazyload_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","enable_breakpoints":"off","pixel_step":200,"breakpoints":"","max_width":2048,"min_width":200,"dpr":"2X","breakpoints_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","overlay":"on","placeholder":"e_blur:2000,q_1,f_auto","base_url":"https:\/\/res.cloudinary.com\/hevo"};!function(e){var t={};function r(i){if(t[i])return t[i].exports;var n=t[i]={i:i,l:!1,exports:{}};return e[i].call(n.exports,n,n.exports,r),n.l=!0,n.exports}r.m=e,r.c=t,r.d=function(e,t,i){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:i})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var i=Object.create(null);if(r.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)r.d(i,n,function(t){return e[t]}.bind(null,n));return i},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=161)}({10:function(e,t){e.exports=function(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,i=new Array(t);r<t;r++)i[r]=e[r];return i},e.exports.__esModule=!0,e.exports.default=e.exports},15:function(e,t,r){var i=r(10);e.exports=function(e,t){if(e){if("string"==typeof e)return i(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Object"===r&&e.constructor&&(r=e.constructor.name),"Map"===r||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?i(e,t):void 0}},e.exports.__esModule=!0,e.exports.default=e.exports},161:function(e,t,r){"use strict";r.r(t);var i=r(8),n=r.n(i),o={deviceDensity:window.devicePixelRatio?window.devicePixelRatio:"auto",density:null,config:CLDLB||{},lazyThreshold:0,enabled:!1,sizeBands:[],iObserver:null,pObserver:null,rObserver:null,aboveFold:!0,minPlaceholderThreshold:500,bind:function(e){var t=this;e.CLDbound=!0,this.enabled||this._init();var r=e.dataset.size.split(" ");e.originalWidth=r[0],e.originalHeight=r[1],this.pObserver?(this.aboveFold&&this.inInitialView(e)?this.buildImage(e):(this.pObserver.observe(e),this.iObserver.observe(e)),e.addEventListener("error",(function(r){e.srcset="",e.src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="rgba(0,0,0,0.1)"/><text x="50%" y="50%" fill="red" text-anchor="middle" dominant-baseline="middle">%26%23x26A0%3B︎</text></svg>',t.rObserver.unobserve(e)}))):this.setupFallback(e)},buildImage:function(e){e.dataset.srcset?(e.cld_loaded=!0,e.srcset=e.dataset.srcset):(e.src=this.getSizeURL(e),e.dataset.responsive&&this.rObserver.observe(e))},inInitialView:function(e){var t=e.getBoundingClientRect();return this.aboveFold=t.top<window.innerHeight+this.lazyThreshold,this.aboveFold},setupFallback:function(e){var t=this,r=[];this.sizeBands.forEach((function(i){if(i<=e.originalWidth){var n=t.getSizeURL(e,i,!0)+" ".concat(i,"w");-1===r.indexOf(n)&&r.push(n)}})),e.srcset=r.join(","),e.sizes="(max-width: ".concat(e.originalWidth,"px) 100vw, ").concat(e.originalWidth,"px")},_init:function(){this.enabled=!0,this._calcThreshold(),this._getDensity();for(var e=parseInt(this.config.max_width),t=parseInt(this.config.min_width),r=parseInt(this.config.pixel_step);e-r>=t;)e-=r,this.sizeBands.push(e);"undefined"!=typeof IntersectionObserver&&this._setupObservers(),this.enabled=!0},_setupObservers:function(){var e=this,t={rootMargin:this.lazyThreshold+"px 0px "+this.lazyThreshold+"px 0px"},r=this.minPlaceholderThreshold<2*this.lazyThreshold?2*this.lazyThreshold:this.minPlaceholderThreshold,i={rootMargin:r+"px 0px "+r+"px 0px"};this.rObserver=new ResizeObserver((function(t,r){t.forEach((function(t){t.target.cld_loaded&&t.contentRect.width>=t.target.cld_loaded&&(t.target.src=e.getSizeURL(t.target))}))})),this.iObserver=new IntersectionObserver((function(t,r){t.forEach((function(t){t.isIntersecting&&(e.buildImage(t.target),r.unobserve(t.target),e.pObserver.unobserve(t.target))}))}),t),this.pObserver=new IntersectionObserver((function(t,r){t.forEach((function(t){t.isIntersecting&&(t.target.src=e.getPlaceholderURL(t.target),r.unobserve(t.target))}))}),i)},_calcThreshold:function(){var e=this.config.lazy_threshold.replace(/[^0-9]/g,""),t=0;switch(this.config.lazy_threshold.replace(/[0-9]/g,"").toLowerCase()){case"em":t=parseFloat(getComputedStyle(document.body).fontSize)*e;break;case"rem":t=parseFloat(getComputedStyle(document.documentElement).fontSize)*e;break;case"vh":t=window.innerHeight/e*100;break;default:t=e}this.lazyThreshold=parseInt(t,10)},_getDensity:function(){var e=this.config.dpr?this.config.dpr.replace("X",""):"off";if("off"===e)return this.density=1,1;var t=this.deviceDensity;"max"!==e&&"auto"!==t&&(e=parseFloat(e),t=t>Math.ceil(e)?e:t),this.density=t},scaleWidth:function(e,t,r){var i=parseInt(this.config.max_width);if(!t){t=e.width;for(var n=Math.round(t/r);-1===this.sizeBands.indexOf(t)&&n<e.height&&t<i;)t++,n=Math.round(t/r)}return t>i&&(t=i),e.originalWidth<t&&(t=e.originalWidth),t},scaleSize:function(e,t,r){var i=e.dataset.crop?parseFloat(e.dataset.crop):(e.originalWidth/e.originalHeight).toFixed(2),n=this.scaleWidth(e,t,i),o=Math.round(n/i),s=[];return s.push(e.dataset.crop?"c_fill":"c_scale"),e.dataset.crop&&s.push("g_auto"),s.push("w_"+n),s.push("h_"+o),r&&1!==this.density&&s.push("dpr_"+this.density),e.cld_loaded=n,{transformation:s.join(","),nameExtension:n+"x"+o}},getSizeURL:function(e,t){var r=this.scaleSize(e,t,!0);return[this.config.base_url,"image",e.dataset.delivery,"upload"===e.dataset.delivery?r.transformation:"",e.dataset.transformations,"v"+e.dataset.version,e.dataset.publicId+"?_i=AA"].filter(this.empty).join("/")},getPlaceholderURL:function(e){e.cld_placehold=!0;var t=this.scaleSize(e,null,!1);return[this.config.base_url,"image",e.dataset.delivery,t.transformation,this.config.placeholder,e.dataset.publicId].filter(this.empty).join("/")},empty:function(e){return void 0!==e&&0!==e.length}};window.CLDBind=function(e){e.CLDbound||o.bind(e)},window.addEventListener("load",(function(){n()(document.querySelectorAll('img[data-cloudinary="lazy"]')).forEach((function(e){CLDBind(e)}))}))},26:function(e,t,r){var i=r(10);e.exports=function(e){if(Array.isArray(e))return i(e)},e.exports.__esModule=!0,e.exports.default=e.exports},27:function(e,t){e.exports=function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)},e.exports.__esModule=!0,e.exports.default=e.exports},28:function(e,t){e.exports=function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")},e.exports.__esModule=!0,e.exports.default=e.exports},8:function(e,t,r){var i=r(26),n=r(27),o=r(15),s=r(28);e.exports=function(e){return i(e)||n(e)||o(e)||s()},e.exports.__esModule=!0,e.exports.default=e.exports}});
+</script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://hevodata.com/learn/wp-content/themes/hevo-theme/inc/sjs/html5.js?ver=3.7.0' id='html5hiv-js'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://hevodata.com/learn/wp-json/"><link rel="alternate" type="application/json" href="https://hevodata.com/learn/wp-json/wp/v2/posts/131118"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hevodata.com/learn/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://hevodata.com/learn/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
+<link rel="shortlink" href="https://hevodata.com/learn/?p=131118">
+<link rel="alternate" type="application/json+oembed" href="https://hevodata.com/learn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhevodata.com%2Flearn%2Flambda-express%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://hevodata.com/learn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhevodata.com%2Flearn%2Flambda-express%2F&amp;format=xml">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5XTBDP3');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86204265-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<style>
+iframe[name='google_conversion_frame'] {
+    height: 0 !important;
+    width: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
+}
+</style>      <link rel="pingback" href="https://hevodata.com/learn/xmlrpc.php"><link rel="icon" href="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1587655389/logo-8/logo-8.png?_i=AA" sizes="32x32">
+<link rel="icon" href="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1587655389/logo-8/logo-8.png?_i=AA" sizes="192x192">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1587655389/logo-8/logo-8.png?_i=AA">
+<meta name="msapplication-TileImage" content="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1587655389/logo-8/logo-8.png?_i=AA">
+  <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n9;src:url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:tk-proxima-nova-n6;src:url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:tk-proxima-nova-n3;src:url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap;}</style><script async="" type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/count.js.download"></script><link rel="stylesheet" href="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/api.min.css" id="omapi-css" media="all"><script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/api.min.js.download" async="" id="omapi-script"></script><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap;}</style><meta http-equiv="origin-trial" content="A7bG5hJ4XpMV5a3V1wwAR0PalkFSxLOZeL9D/YBYdupYUIgUgGhfVJ1zBFOqGybb7gRhswfJ+AmO7S2rNK2IOwkAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/f(1).txt"></script><meta http-equiv="origin-trial" content="Azy2GzGQxPvGmQwVDdEL1jRuKSXIdSSASA06JCA6PCeaVHpFYf8Rw5/q+9adc9CrBTxfCeUwxkuDM4PWEmdqywwAAACKeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJQcml2YWN5U2FuZGJveEFkc0FQSXMiLCJleHBpcnkiOjE2NjEyOTkxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/f(2).txt"></script></head>
+
+<body class="post-template-default single single-post postid-131118 single-format-standard wp-embed-responsive group-blog">
+<div id="page" class="site">
+  <a class="skip-link screen-reader-text d-none" href="https://hevodata.com/learn/lambda-express/#content">Skip to content  </a>
+
+  <header class="main-header">
+    <div class="banner-container banner-data-container"></div>
+            <nav class="navbar navbar-expand-lg navbar--main navbar-light navbar-shadow" role="banner">
+  <div class="container">
+    <a class="navbar-brand" data-track-click="Homepage Logo" data-track-category="Blog Top Nav" href="https://www.hevodata.com/">
+              <img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/logo-black_oybxu1.svg" class="logo" alt="">
+          </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-lg-flex flex-lg-row flex-lg-nowrap justify-content-lg-between" id="navbarSupportedContent">
+      <ul id="menu-main" class="navbar-nav my-4 my-lg-0 mr-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1660 nav-item"><a title="Platform" data-track-click="Platform Click" data-track-category="Blog Top Nav" href="https://hevodata.com/pipeline" class="nav-link">Platform</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1661" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1661 nav-item"><a title="Integrations" data-track-click="Integrations Click" data-track-category="Blog Top Nav" href="https://hevodata.com/integrations/pipeline/" class="nav-link">Integrations</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1662 nav-item"><a title="Pricing" data-track-click="Pricing Click" data-track-category="Blog Top Nav" href="https://hevodata.com/pricing/pipeline/" class="nav-link">Pricing</a></li>
+</ul>
+      <form role="search" method="get" class="search-form navbar-search form-inline my-4 my-lg-0 my-lg-0 d-none d-md-flex" action="https://hevodata.com/learn/" data-factors-bind="true">
+        <div class="search-group">
+          <span class="hevo-web-icon hevo-search search-icon"></span>
+          <input type="search" class="search-field" placeholder="Search Inside Hevo" value="" name="s" title="Search for:">
+          <button type="button" class="hevo-web-icon clear-search hevo-close"></button>
+        </div>
+        <button type="submit" class="btn btn-sm btn-outline-primary d-lg-none" data-factors-bind="true">Search</button>
+      </form>
+
+      <div class="navbar-newsletter">
+                      </div>
+
+      <div class="nav-item primary-cta-wrapper free-trial-link d-block">
+        
+        <a href="https://hevodata.com/signup/?step=email" class="btn btn-sm btn-primary" data-track-click="Get Started for Free CTA" data-track-category="Blog Top Nav">
+          Get Started for Free
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+</nav>
+  </header>
+
+  
+  <div id="content" class="site-content">
+    <div class="container">
+
+<section id="primary" class="content-area single-blog-content-area">
+  <main id="main" class="site-main" role="main">
+    <div class="post-container">
+              
+<article id="post-131118">
+  <div class="d-flex justify-content-between">
+    <div class="entry-sidebar">
+              <div class="entry-sidebar-sticky-wrapper entry-sidebar-sticky-wrapper-content-optimised">
+          
+<div class="get-started-side">
+  <img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/logo-black_oybxu1.svg" class="logo d-none">
+  <div class="embed-responsive embed-responsive-16by9 mb-3">
+    <div class="embed-responsive-item">
+          <img width="1280" height="720" data-src="https://res.cloudinary.com/hevo/images/w_300,h_169,c_scale/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5-300x169.png?_i=AA" alt="Types of data model SI" class="w-100 img-fluid wp-image-146666" data-public-id="hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/Data-Model-in-Power-Query-Blog-Side-Bar-5-300x169.png" data-transformations="f_auto,q_auto" data-version="1654604835" data-size="1280 720" data-srcset="https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 1280w" data-sizes="(max-width: 300px) 100vw, 300px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1654604835/hevo-learn/Data-Model-in-Power-Query-Blog-Side-Bar-5/Data-Model-in-Power-Query-Blog-Side-Bar-5.png?_i=AA 1280w">
+          
+    </div>
+  </div>
+
+  <h2 class="mb-2 get-started-heading">
+    No-code Data Pipeline For Your Data Warehouse  </h2>
+
+  <p class="mb-3">
+    Easily load data from multiple sources to a Data Warehouse of your choice in real-time using Hevo.  </p>
+  <form class="free-trial-form invalid" novalidate="" autocomplete="off" data-factors-bind="true">
+    <div class="input-group mb-3">
+      <input name="email" type="email" class="form-control form-control-sm input-tooltip invalid" placeholder="name@company.com" aria-label="name@company.com" required="">
+
+      <div class="input-group-append">
+        <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="email" data-default-error-title="Please enter your business email : &lt;span class=&#39;font-weight-semi-bold&#39;&gt;name@company.com&lt;/span&gt;">
+        </span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-sm stacked-btn trial-button btn-block" data-factors-bind="true">
+      <span class="btn-main-body">
+        Try Hevo for free
+      </span>
+      <img class="btn-loading-indicator" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/btn-secondary-loading_ifbmq0.svg">
+    </button>
+  </form>
+</div>
+        </div>
+          </div>
+  
+    <div class="entry-content single-blog-col px-0 px-lg-5 px-xl-7">
+      <header class="entry-header">
+          <h1 class="entry-title font-weight-normal">Running Lambda Express Apps: Going Serverless</h1>
+          <p class="blog-author single-post-blog-author">
+            <a href="https://hevodata.com/learn/author/raj-verma/" title="Posts by Raj Verma" rel="author">Raj Verma</a> on <a href="https://hevodata.com/learn/category/aws/" rel="category tag">AWS</a>, <a href="https://hevodata.com/learn/category/aws-lambda/" rel="category tag">AWS Lambda</a>, <a href="https://hevodata.com/learn/category/data-integration/" rel="category tag">Data Integration</a>, <a href="https://hevodata.com/learn/category/express-js/" rel="category tag">Express js</a>, <a href="https://hevodata.com/learn/category/java/lambda-expressions/" rel="category tag">Lambda Expressions</a>, <a href="https://hevodata.com/learn/category/node-js/" rel="category tag">Node js</a>, <a href="https://hevodata.com/learn/category/tutorials/" rel="category tag">Tutorials</a>            •
+            April 13th, 2022            •
+            <a href="https://community.hevodata.com/write-for-hevo" class="text-primary text-uppercase font-weight-bold">Write for Hevo
+            </a>
+          </p>
+      </header>
+
+      <div class="embed-responsive embed-responsive-16by9 mb-8">
+        <div class="post-thumbnail embed-responsive-item">
+                    <img width="1280" height="720" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSJyZ2JhKDE1MywxNTMsMTUzLDAuNSk7cmdiYSgxNTMsMTUzLDE1MywwLjEpO3JnYmEoMTUzLDE1MywxNTMsMC41KSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+PC9yZWN0Pjwvc3ZnPg==" alt="Lambda Express Featured Image | Hevo Data" data-public-id="hevo-learn/Lambda-Express-Featured-Image.png" class="wp-post-131118 wp-image-131232" data-format="png" data-transformations="f_auto,q_auto" data-version="1649849892" data-size="1280 720" data-srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 1280w" data-sizes="(max-width: 768px) 100vw, 768px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649849892/hevo-learn/Lambda-Express-Featured-Image/Lambda-Express-Featured-Image.png?_i=AA 1280w">
+        </div>
+      </div>
+
+      <div class="single-blog">
+        
+<p>Nowadays, most organizations and Software Developers are preferring Serverless applications for a number of reasons. Serverless applications are flexible and easy to develop due to the simplicity of their design. And, Developers are constantly on the look for transitioning to Serverless applications. Express is a web framework for Node.js which simplifies the development of Serverless web applications, websites, and APIs. AWS Lambda, on the other hand, allows existing Express applications to be run in a Serverless fashion.</p>
+
+
+
+<p>This article will take you through AWS Lambda Express Apps deployment. But beforehand let’s discuss the highly talked about term “<strong>Serverless</strong>” in brief.</p>
+
+
+
+<h2>Table of Contents</h2>
+
+
+
+<ul><li><a href="https://hevodata.com/learn/lambda-express/#w1" class="rank-math-link">What is Serverless?</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w2" class="rank-math-link">Why Use Serverless?</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w3" class="rank-math-link">Going Serverless with AWS Serverless Express</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w4" class="rank-math-link">Create a Simple Express Application</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w5" class="rank-math-link">Deploying Lambda Express App</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w6" class="rank-math-link">Limitations of Serverless Lambda Express.js apps</a></li><li><a href="https://hevodata.com/learn/lambda-express/#w7" class="rank-math-link">Conclusion</a></li></ul>
+
+
+
+<h2 id="w1">What is Serverless?</h2>
+
+
+
+<figure class="wp-block-image size-large is-resized"><div data-src="https://res.cloudinary.com/hevo/image/upload/e_blur:2000,q_1,f_auto/hevo-learn/lambda-express.png" class="lightgallery-link"><a href="https://res.cloudinary.com/hevo/image/upload/e_blur:2000,q_1,f_auto/hevo-learn/lambda-express.png" class=""><div data-src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA" class="lightgallery-link"><a href="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA" class=""><img width="530" height="270" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/lambda-express.png" alt="Lambda Express: Serverless | Hevo Data" class="wp-post-131118 wp-image-131177" data-public-id="hevo-learn/lambda-express.png" data-format="png" data-transformations="f_auto,q_auto" data-version="1649846696" data-size="2120 1080" data-srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 2120w, https://res.cloudinary.com/hevo/images/w_300,h_153/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_522/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_768,h_391/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_1536,h_782/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 1536w, https://res.cloudinary.com/hevo/images/w_2048,h_1043/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 2048w" data-sizes="(max-width: 530px) 100vw, 530px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 2120w, https://res.cloudinary.com/hevo/images/w_300,h_153/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_522/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_768,h_391/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_1536,h_782/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 1536w, https://res.cloudinary.com/hevo/images/w_2048,h_1043/f_auto,q_auto/v1649846696/hevo-learn/lambda-express/lambda-express.png?_i=AA 2048w"></a></div></a></div><figcaption>Image Source: <a href="https://blog.runcloud.io/understand-serverless-computing/" class="rank-math-link" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">www.blog.runcloud.io</a></figcaption></figure>
+
+
+
+<p>Serverless is a fully-managed Cloud computing architecture that doesn’t require the application owners to buy, rent, or manage the Servers. The Cloud partner manages, handles, and maintains the infrastructure side of things for the web applications. On top of that, the Serverless environment allows the provisioning of Servers dynamically to meet the real-time computing demand. In a Serverless architecture, the backend logic is run on-demand in a stateless mode.</p>
+
+
+
+<p>However, as the name suggests, Serverless applications do not run without Servers. It only means that businesses or clients need not manage the server infrastructure and instead, focus on front-end development. Serverless architectures run on significantly reduced operational costs, complications, and engineering resources. However, they rely heavily on the vendors and supporting services.</p>
+
+
+
+<h2 id="w2">Why Use Serverless?</h2>
+
+
+
+<ul><li><strong>Fully-managed Server: </strong>With Serverless architecture, users don’t need to manage or maintain the backend infrastructure. It’s being taken care of by the Cloud partners.</li><li><strong>Cost-effective: </strong>Serverless architectures run on a significantly reduced operational cost as users pay only for what they use. There are no additional costs involved with respect to idle capacity, resources, or maintenance.</li><li><strong>High Availability:</strong> Serverless architecture incorporates multiple redundancies which makes it extremely fault-tolerant.</li><li><strong>High Scalability: </strong>Serverless architecture offers virtually limitless and easy scalability which can be implemented by executing just a few lines of code.</li></ul>
+
+
+
+<div class="wp-block-hevo-blocks-hevo-flash-note-block note"><h2 class="note__header"><span class="hevo-web-icon hevo-bookmark note__header__icon"></span><strong class="note__header__text">Simplify Your ETL with Hevo’s No-code Data Pipeline</strong></h2><div class="note__content">
+<p><a aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="rank-math-link" href="https://hevodata.com/" target="_blank" data-wpel-link="internal">Hevo Data</a>&nbsp;a Fully-managed Data Pipeline platform, can help you automate, simplify &amp; enrich your data replication process in a few clicks. With Hevo’s wide variety of connectors and blazing-fast Data Pipelines, you can extract &amp; load data from&nbsp;<a aria-label=" (opens in a new tab)" rel="noreferrer noopener" class="rank-math-link" href="https://hevodata.com/integrations/" target="_blank" data-wpel-link="internal">100+ Data Sources</a>&nbsp;(including<strong>&nbsp;30+ Free Data Sources</strong>) straight into your Data Warehouse or any Databases. To further streamline and prepare your data for analysis, you can process and enrich raw granular data using Hevo’s robust &amp; built-in Transformation Layer without writing a single line of code!</p>
+
+
+
+<a class="btn btn-primary btn-xs hevo-mango-button" href="https://hevodata.com/signup?step=email" target="_blank" data-wpel-link="internal">Get started with hevo for free</a>
+
+
+
+<p>Hevo is the fastest, easiest, and most reliable data replication platform that will save your engineering bandwidth and time multifold. Try our 14-day full access free trial today to experience an entirely automated hassle-free Data Replication!</p>
+</div></div>
+
+
+
+<h2 id="w3">Going Serverless with AWS Serverless Express</h2>
+
+
+
+<figure class="wp-block-image size-large is-resized"><div data-src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA" class="lightgallery-link"><a href="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA" class=""><img width="360" height="230" loading="lazy" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/lambda-express-2.png" alt="Lambda Express: AWS Lambda | Hevo Data" class="wp-post-131118 wp-image-131180" data-public-id="hevo-learn/lambda-express-2.png" data-format="png" data-transformations="f_auto,q_auto" data-version="1649846768" data-size="360 230" data-srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA 360w, https://res.cloudinary.com/hevo/images/w_300,h_192/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA 300w" data-sizes="(max-width: 360px) 100vw, 360px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA 360w, https://res.cloudinary.com/hevo/images/w_300,h_192/f_auto,q_auto/v1649846768/hevo-learn/lambda-express-2/lambda-express-2.png?_i=AA 300w"></a></div><figcaption>Image Source: <a href="https://blog.iron.io/what-is-aws-lambda/" class="rank-math-link" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">www.blog.iron.io</a></figcaption></figure>
+
+
+
+<p>If you want your app to be immensely popular, you must get it online first. Assuming that you want people all over the world to use your app, you need to think in terms of scalability, resiliency, and many other factors. Well, in simple terms, you just need to go Serverless. With <a rel="dofollow noopener nofollow external noreferrer" href="https://aws.amazon.com/lambda/" class="rank-math-link" target="_blank" data-wpel-link="external">AWS Lambda</a> and <a rel="dofollow noopener nofollow external noreferrer" href="https://aws.amazon.com/api-gateway/" class="rank-math-link" target="_blank" data-wpel-link="external">API Gateway</a>, it is possible to have a Serverless architecture for your Express applications.</p>
+
+
+
+<p>You can follow this example on the <a rel="dofollow noopener nofollow external noreferrer" href="https://github.com/awslabs/aws-serverless-express" target="_blank" data-wpel-link="external">aws-serverless-express library</a> for deploying and managing your Serverless resources.</p>
+
+
+
+<ul><li>You can clone the library into a local directory using the following command.</li></ul>
+
+
+
+<pre class="wp-block-code"><code>git clone https://github.com/awslabs/aws-serverless-express.git</code></pre>
+
+
+
+<ul><li>Now, from within the <code>example</code> directory, run the following command.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> npm run config &lt;accountId&gt; &lt;bucketName&gt; [region]</code></pre>
+
+
+
+<p><strong>Note:</strong> This command basically modifies some files with your own settings.</p>
+
+
+
+<ul><li>Now, remove “<strong>index.html</strong>” from the <code>package-function</code> command in <code>package.json</code> and add “<strong>views</strong>” and “<strong>controllers</strong>”. These additional directories are required for running your app.</li><li>Copy the following files from the <code>example</code> directory into your existing project’s directory:<ul><li><code><strong>Simple-proxy-api.yaml:</strong></code> This <a href="http://swagger.io/" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">Swagger</a> file describes your API.</li><li><code><strong>cloudformation.json:</strong></code> This is a CloudFormation template used to create the Lambda function and API.</li><li><code><strong>package.json:</strong></code> This file contains useful npm scripts for managing your AWS resources and Lambda function.</li><li><code><strong>api-gateway-event.json:</strong></code> This file is helpful for testing your Lambda function locally.</li><li><code><strong>lambda.js:</strong></code> This is the Lambda function around your Express application.</li></ul></li></ul>
+
+
+
+<p>The <code>aws-serverless-express library</code> transforms the client request (via API Gateway) into a standard Node.js HTTP request object. This request is then sent to a Unix domain socket which transforms the request back for the API Gateway response. The library also starts your Express Server on the initial invocation of the Lambda function by the Unix domain socket. Here is the <code>aws-serverless-express</code> library.</p>
+
+
+
+<pre class="wp-block-code"><code>// lambda.js
+'use strict'
+const awsServerlessExpress = require('aws-serverless-express')
+const app = require('./app')
+const server = awsServerlessExpress.createServer(app)
+
+exports.handler = (event, context) =&gt; awsServerlessExpress.proxy(server, event, context)</code></pre>
+
+
+
+<h2 id="w4">Create a Simple Express Application</h2>
+
+
+
+<p>As discussed earlier, Express apps are flexible and easy to build. Before the deployment of the Lambda Express app, you must have an Express app in the first place. For a simple Express app, adding a few routes and route handlers will do the job. The Simplest Express app looks something like this.</p>
+
+
+
+<pre class="wp-block-code"><code> mkdir sample-app &amp;&amp; cd sample-app
+npm init -y
+npm install express
+touch app.js</code></pre>
+
+
+
+<p>The following code goes to <code>app.js</code>.</p>
+
+
+
+<pre class="wp-block-code"><code> const express = require('express');
+const app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.get('/api/info', (req, res) =&gt; {
+  res.send({ application: 'sample-app', version: '1.0' });
+});
+app.post('/api/v1/getback', (req, res) =&gt; {
+  res.send({ ...req.body });
+});
+app.listen(3000, () =&gt; console.log(`Listening on: 3000`));</code></pre>
+
+
+
+<p>The above Express application exposes 2 APIs.</p>
+
+
+
+<ul><li><code>GET /api/info</code> returns details about the current API.</li><li><code>POST /api/v1/getback</code> returns the request body that was sent.</li></ul>
+
+
+
+<p>Now that you have created your Express app, it’s time to make it ready for the Lambda Express deployment. To do so, you will need a <a href="https://www.npmjs.com/package/serverless-http" class="rank-math-link" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">serverless-http</a> module for wrapping up the Express app for Serverless use.</p>
+
+
+
+<p>Run the following command to install the module.</p>
+
+
+
+<pre class="wp-block-code"><code>npm i serverless-http</code></pre>
+
+
+
+<p>Now, update the app.js accordingly.</p>
+
+
+
+<pre class="wp-block-code"><code>const serverless = require('serverless-http');
+const express = require('express');
+const app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.get('/api/info', (req, res) =&gt; {
+  res.send({ application: 'sample-app', version: '1' });
+});
+app.post('/api/v1/getback', (req, res) =&gt; {
+  res.send({ ...req.body });
+});
+//app.listen(3000, () =&gt; console.log(`Listening on: 3000`));
+module.exports.handler = serverless(app);</code></pre>
+
+
+
+<div class="wp-block-hevo-blocks-hevo-flash-note-block note"><h2 class="note__header"><span class="hevo-web-icon hevo-bookmark note__header__icon"></span><strong class="note__header__text">What makes Hevo’s ETL Process Best-In-Class</strong></h2><div class="note__content">
+<p>Providing a high-quality ETL solution can be a difficult task if you have a large volume of data. <a href="https://hevodata.com/" class="rank-math-link" data-wpel-link="internal">Hevo’s</a> automated, No-code platform empowers you with everything you need to have for a smooth data replication experience.</p>
+
+
+
+<p>Check out what makes Hevo amazing:</p>
+
+
+
+<ul><li><strong>Fully Managed</strong>: Hevo requires no management and maintenance as it is a fully automated platform.</li><li><strong>Data Transformation</strong>: Hevo provides a simple interface to perfect, modify, and enrich the data you want to transfer.</li><li><strong>Faster Insight Generation</strong>: Hevo offers near real-time data replication so you have access to real-time insight generation and faster decision making.&nbsp;</li><li><strong>Schema Management</strong>: Hevo can automatically detect the schema of the incoming data and map it to the destination schema.</li><li><strong>Scalable Infrastructure</strong>: Hevo has in-built integrations for 100+ sources (with 40+ free sources) that can help you scale your data infrastructure as required.</li><li><strong>Live Support</strong>: Hevo team is available round the clock to extend exceptional support to its customers through chat, email, and support calls.</li></ul>
+
+
+
+<a class="btn btn-primary btn-xs hevo-mango-button" href="https://hevodata.com/signup?step=email" target="_blank" data-wpel-link="internal">Sign up here for a 14-day free trial!</a>
+</div></div>
+
+
+
+<h2 id="w5">Deploying Lambda Express App</h2>
+
+
+
+<p>Your Express app is up and running but now comes the hard part: releasing your app to the world. Deploying your Express app on Lambda can be a tricky and tedious task. But with the Serverless Framework, it’s just a matter of a few minutes. Follow the below-mentioned steps to deploy your Lambda Express app using Serverless.</p>
+
+
+
+<ul><li>Run the following command in the terminal to install Serverless.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> npm install -g serverless</code></pre>
+
+
+
+<ul><li>Run the following command to verify that Serverless is installed successfully.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> serverless ?version</code></pre>
+
+
+
+<ul><li>Next up, you need to allow Serverless to access your AWS account. Run the following command after replacing <code>ACCESS_KEY</code> and <code>SECRET_KEY</code> with your AWS access and secret keys.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> serverless config credentials --provider aws --key ACCESS_KEY ?secret SECRET_KEY</code></pre>
+
+
+
+<ul><li>Now, you need to create a Serverless Framework configuration file in the application folder.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> touch serverless.yml</code></pre>
+
+
+
+<ul><li>The following code goes in <code>serverless.yml</code>.</li></ul>
+
+
+
+<pre class="wp-block-code"><code>service: sample-app
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  memorySize: 128
+functions:
+  app:
+    handler: app/app.handler
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true</code></pre>
+
+
+
+<ul><li>Here comes the last step, deploying your application. Run the following command to deploy your Express application on the Lambda environment.</li></ul>
+
+
+
+<pre class="wp-block-code"><code> serverless deploy</code></pre>
+
+
+
+<ul><li>On the successful deployment of the Lambda Express app, you’ll see the following message.</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/express-lambda-serverless.png" alt="Lambda Express Deployment | Hevo Data"><figcaption>Image Source: <a href="https://bitbucket.org/blog/deploy-an-express-js-app-to-aws-lambda-using-the-serverless-framework" class="rank-math-link" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">www.bitbucket.org</a></figcaption></figure>
+
+
+
+<p>This is how you can easily automate the deployment of Lambda Express apps using Serverless Framework.</p>
+
+
+
+<h2 id="w6">Limitations of Serverless Lambda Express.js apps</h2>
+
+
+
+<ul><li>AWS Lambda doesn’t support Websockets as your server can’t exist with no requests. However, there is some limited Websockets support available through <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html#mqtt" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">AWS IOT websockets over MQTT protocol</a>.</li><li>“<em><strong>Upload</strong></em>” to the file system isn’t supported either as the AWS Lambda function is read-only. However, it supports uploading files to the <code>/tmp</code> folder. The files will exist in the <code>/tmp</code> folder for a short time till the function is “<strong>warm</strong>”.</li><li>“<em><strong>Execution limits</strong></em>” can affect your Serverless Express app. API Gateway has a timeout of 30 seconds, whereas AWS Lambda’s maximum execution time can be as long as 5 minutes.</li></ul>
+
+
+
+<h2 id="w7">Conclusion</h2>
+
+
+
+<p>Going Serverless is the need of the hour keeping in mind the scalability, security, and resiliency. AWS Lambda allows existing Express apps to go Serverless and so there is no infrastructure for Developers to manage. Scaling, provisioning, and configuration are fully managed in Lambda Express Apps.</p>
+
+
+
+<p>This article introduced you to Serverless and helped you in the deployment of Lambda Express apps. However, it’s easy to become lost in a blend of data from multiple sources. Imagine trying to make heads or tails of such data. This is where Hevo comes in.</p>
+
+
+
+<a class="btn btn-primary btn-xs hevo-mango-button" href="https://hevodata.com/signup?step=email" target="_blank" data-wpel-link="internal">visit our website to explore hevo</a>
+
+
+
+<p><a href="https://hevodata.com/" class="rank-math-link" data-wpel-link="internal">Hevo Data</a> with its strong integration with <a href="https://hevodata.com/integrations/?_BI_tools=" class="rank-math-link" data-wpel-link="internal">100+ Sources</a> allows you to not only export data from multiple sources &amp; load data to the destinations, but also transform &amp; enrich your data, &amp; make it analysis-ready so that you can focus only on your key business needs and perform insightful analysis.</p>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Getting Started with Hevo - An Overview" width="500" height="375" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/p0XGLDgvCo8.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div></figure>
+
+
+
+<p>Give Hevo Data a try and <a class="btn btn-primary btn-xs hevo-mango-button" href="https://hevodata.com/signup?step=email" target="_blank" data-wpel-link="internal">sign up</a> for a 14-day free trial today. Hevo offers <a href="https://hevodata.com/pricing/?_pricing=" class="rank-math-link" data-wpel-link="internal">plans &amp; pricing</a> for different use cases and business needs, check them out!</p>
+
+
+
+<p>Share your experience of Lambda Express deployment in the comments section below.</p>
+      </div>
+
+      <div class="get-started-post d-lg-none">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h2 class="mb-4 mb-md-0 text-center text-md-left font-weight-bold">
+      No-code Data Pipeline For Your Data Warehouse      </h2>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.hevodata.com/signup/?step=email" class="btn btn-primary btn-sm btn-block" data-track-click="Try Hevo for free" data-track-category="Blog Get Started Sidebar Post">
+        Try for free
+      </a>
+    </div>
+  </div>
+</div>
+
+      <div class="tags-wrapper">
+  <ul class="tag-ul text-center"><li class="list-inline-item tag-item"><a href="https://hevodata.com/learn/tag/aws-lambda/" rel="tag">AWS Lambda</a></li> <li class="list-inline-item tag-item"><a href="https://hevodata.com/learn/tag/express-js/" rel="tag">Express JS</a></li></ul></div>
+    </div>
+
+    <div class="entry-sidebar">
+      <div class="entry-sidebar-sticky-wrapper">
+      
+              
+          <div class="related-articles">
+    <h5 class="title text-secondary mb-1">Related Articles</h5>
+
+          <a href="https://hevodata.com/learn/aws-lambda-cron/" class="related-article-block py-3 border-bottom" data-track-click="AWS Lambda Cron Jobs: 3 Easy Steps" data-track-category="Blog Related Articles">
+        <span class="mr-4 h-100">
+          <span class="thumb border rounded-circle">
+            <img width="199" height="198" class="wp-image-128162" data-src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA" alt="" data-public-id="hevo-learn/AWS-Lambda-Thumbnail.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/AWS-Lambda-Thumbnail.png" data-transformations="f_auto,q_auto" data-version="1649234219" data-size="199 198" data-srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 199w, https://res.cloudinary.com/hevo/images/w_150,h_150,c_fill/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 150w" data-sizes="(max-width: 199px) 100vw, 199px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 199w, https://res.cloudinary.com/hevo/images/w_150,h_150,c_fill/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 150w">          </span>
+        </span>
+
+        <span class="h-100">
+          <span class="title">
+            AWS Lambda Cron Jobs: 3 Easy Steps          </span>
+        </span>
+      </a>
+            <a href="https://hevodata.com/learn/s3-batch-operations/" class="related-article-block py-3 border-bottom" data-track-click="AWS S3 Batch Operations Made Easy: A Complete Guide" data-track-category="Blog Related Articles">
+        <span class="mr-4 h-100">
+          <span class="thumb border rounded-circle">
+            <img width="191" height="188" class="wp-image-130975" data-src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649771029/hevo-learn/S3-Batch-Operations-Thumbnail-1/S3-Batch-Operations-Thumbnail-1.png?_i=AA" alt="" data-public-id="hevo-learn/S3-Batch-Operations-Thumbnail-1.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/S3-Batch-Operations-Thumbnail-1.png" data-transformations="f_auto,q_auto" data-version="1649771029" data-size="191 188" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy">          </span>
+        </span>
+
+        <span class="h-100">
+          <span class="title">
+            AWS S3 Batch Operations Made Easy: A Complete Guide          </span>
+        </span>
+      </a>
+            <a href="https://hevodata.com/learn/aws-lambda-docker/" class="related-article-block py-3 border-bottom" data-track-click="AWS Lambda Docker Image: An Easy Guide" data-track-category="Blog Related Articles">
+        <span class="mr-4 h-100">
+          <span class="thumb border rounded-circle">
+            <img width="199" height="198" class="wp-image-128162" data-src="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA" alt="" data-public-id="hevo-learn/AWS-Lambda-Thumbnail.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/AWS-Lambda-Thumbnail.png" data-transformations="f_auto,q_auto" data-version="1649234219" data-size="199 198" data-srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 199w, https://res.cloudinary.com/hevo/images/w_150,h_150,c_fill/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 150w" data-sizes="(max-width: 199px) 100vw, 199px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 199w, https://res.cloudinary.com/hevo/images/w_150,h_150,c_fill/f_auto,q_auto/v1649234219/hevo-learn/AWS-Lambda-Thumbnail/AWS-Lambda-Thumbnail.png?_i=AA 150w">          </span>
+        </span>
+
+        <span class="h-100">
+          <span class="title">
+            AWS Lambda Docker Image: An Easy Guide          </span>
+        </span>
+      </a>
+        </div>
+      
+      
+      </div>
+    </div>
+  </div>
+</article>
+          </div>
+    
+  </main>
+
+</section>
+</div>
+
+
+
+<div class="container">
+    <div class="blog-row border-top-0 border-bottom pb-8">
+    <div class="blog-row-head">
+      <h3 class="title">Continue Reading</h3>
+    </div>
+
+    <div class="row mb-lg-8">
+
+              <div class="col-md-4 related-post-card-column">
+          <div class="blog-card mb-6 mb-lg-0 related-post-card">
+            
+<article id="post-163863" class="post-163863 post type-post status-publish format-standard has-post-thumbnail hentry category-data-integration category-modern-data-stack tag-data-integration tag-modern-data-stack">
+  <div class="embed-responsive embed-responsive-16by9 mb-4">
+    <a href="https://hevodata.com/learn/what-is-the-modern-data-stack/" class="post-thumbnail embed-responsive-item" rel="bookmark">
+      <img width="5689" height="3200" class="wp-image-164071" data-src="https://res.cloudinary.com/hevo/images/w_768,h_432,c_scale/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2-768x432.png?_i=AA" data-public-id="hevo-learn/Understanding-Modern-Data-Stack-2.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/Understanding-Modern-Data-Stack-2-768x432.png" data-transformations="f_auto,q_auto" data-version="1662706688" data-size="5689 3200" data-srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_1536,h_864/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 1536w, https://res.cloudinary.com/hevo/images/w_2048,h_1152/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 2048w" data-sizes="(max-width: 768px) 100vw, 768px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/w_1536,h_864/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 1536w, https://res.cloudinary.com/hevo/images/w_2048,h_1152/f_auto,q_auto/v1662706688/hevo-learn/Understanding-Modern-Data-Stack-2/Understanding-Modern-Data-Stack-2.png?_i=AA 2048w">
+    </a>
+  </div>
+
+  <header class="entry-header">
+    <p class="blog-author mb-2"><a href="https://hevodata.com/learn/author/can-goktug-ozdem/" title="Posts by Can Goktug Ozdem" rel="author">Can Goktug Ozdem</a> on <a href="https://hevodata.com/learn/category/data-integration/" rel="category tag">Data Integration</a>, <a href="https://hevodata.com/learn/category/modern-data-stack/" rel="category tag">Modern Data Stack</a> </p>
+    <h2 class="entry-title"><a href="https://hevodata.com/learn/what-is-the-modern-data-stack/" rel="bookmark"> The Reign of Modern Data Stack: History, Components, and Use Cases</a></h2>      </header>
+</article>
+
+				
+
+          </div>
+        </div>
+              <div class="col-md-4 related-post-card-column">
+          <div class="blog-card mb-6 mb-lg-0 related-post-card">
+            
+<article id="post-163688" class="post-163688 post type-post status-publish format-standard has-post-thumbnail hentry category-azure-data-factory category-data-integration category-data-warehouse category-database-management-systems category-microsoft-azure category-oracle category-synapse tag-azure-data-factory tag-azure-synapse tag-data-integration tag-data-warehouse tag-database-management-systems tag-oracle-database">
+  <div class="embed-responsive embed-responsive-16by9 mb-4">
+    <a href="https://hevodata.com/learn/oracle-to-azure/" class="post-thumbnail embed-responsive-item" rel="bookmark">
+      <img width="1280" height="720" class="wp-image-163698" data-src="https://res.cloudinary.com/hevo/images/w_768,h_432,c_scale/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image-768x432.png?_i=AA" data-public-id="hevo-learn/Oracle-to-Azure-Featured-Image.png" data-format="png" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/Oracle-to-Azure-Featured-Image-768x432.png" data-transformations="f_auto,q_auto" data-version="1661770774" data-size="1280 720" data-srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 1280w" data-sizes="(max-width: 768px) 100vw, 768px" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" srcset="https://res.cloudinary.com/hevo/images/w_768,h_432/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 768w, https://res.cloudinary.com/hevo/images/w_300,h_169/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 300w, https://res.cloudinary.com/hevo/images/w_1024,h_576/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 1024w, https://res.cloudinary.com/hevo/images/f_auto,q_auto/v1661770774/hevo-learn/Oracle-to-Azure-Featured-Image/Oracle-to-Azure-Featured-Image.png?_i=AA 1280w">
+    </a>
+  </div>
+
+  <header class="entry-header">
+    <p class="blog-author mb-2"><a href="https://hevodata.com/learn/author/sanchit-agarwal/" title="Posts by Sanchit Agarwal" rel="author">Sanchit Agarwal</a> on <a href="https://hevodata.com/learn/category/azure-data-factory/" rel="category tag">Azure Data Factory</a>, <a href="https://hevodata.com/learn/category/data-integration/" rel="category tag">Data Integration</a>, <a href="https://hevodata.com/learn/category/data-warehouse/" rel="category tag">Data Warehouse</a>, <a href="https://hevodata.com/learn/category/data-integration/database-management-systems/" rel="category tag">Database Management Systems</a>, <a href="https://hevodata.com/learn/category/microsoft-azure/" rel="category tag">Microsoft Azure</a>, <a href="https://hevodata.com/learn/category/data-integration/database-management-systems/oracle/" rel="category tag">Oracle</a>, <a href="https://hevodata.com/learn/category/microsoft-azure/synapse/" rel="category tag">Synapse</a> </p>
+    <h2 class="entry-title"><a href="https://hevodata.com/learn/oracle-to-azure/" rel="bookmark"> Oracle to Azure 101: Integration Made Easy</a></h2>      </header>
+</article>
+
+				
+
+          </div>
+        </div>
+      
+            <div class="col-md-4 mb-7 mb-md-0 order-md-first">
+        <div class="card card-contribute bg-grey-light p-5 border h-100 d-flex text-center align-items-center justify-content-center">
+          <img class="mw-100 mb-5" width="150px" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/contribute_wrwej2_1_1_u5h2jw.png">
+          <h2 class="mb-3 font-weight-bold">Become a Contributor</h2>
+          <p class="mb-4 text-secondary">You can contribute any number of in-depth posts on all things data. </p>
+          <a href="https://community.hevodata.com/write-for-hevo" class="text-primary text-uppercase font-weight-bold">Write for Hevo</a>
+        </div>
+      </div>
+          </div>
+  </div>
+
+
+      <div class="comments-wrapper">
+      <div id="disqus_thread">
+		</div>
+    </div>
+  
+  
+        </div><!-- .container -->
+                <section class="get-started-link-section dark">
+  <div class="container text-center text-lg-left">
+    <div class="row justify-content-center align-items-end">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h2 class="text-white h1">Bring Real-Time Data from Any Source into your Warehouse</h2>
+      </div>
+
+      <div class="col-lg-6 col-sm-10">
+        <form class="free-trial-form input-group-stacked-btn-wrapper invalid" novalidate="" autocomplete="off" data-factors-bind="true">
+          <div class="input-group">
+            <input name="email" type="email" class="form-control form-control-sm input-tooltip invalid" placeholder="Your Work Email" aria-label="Your Work Email" required="">
+
+            <div class="input-group-append">
+              <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="email" data-default-error-title="Please enter your business email : &lt;span class=&#39;font-weight-semi-bold&#39;&gt;name@company.com&lt;/span&gt;">
+              </span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-sm stacked-btn trial-button" data-track-click="Get Started for Free" data-track-category="Blog Get Started Footer" data-factors-bind="true">
+            <span class="btn-main-body">
+              Get Started for Free
+            </span>
+            <img class="btn-loading-indicator" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/btn-secondary-loading_ifbmq0.svg">
+          </button>
+        </form>
+
+        <a href="https://hevodata.com/request-demo" class="btn btn-link btn-thumb font-weight-bold mt-3" data-track-click="Talk to a Product Expert" data-track-category="Blog Bottom Banner">
+          <span>Talk to a Product Expert</span> <span class="hevo-web-icon hevo-right ml-2"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="skewed-bg-container">
+    <img id="abstract_footer_right" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/footer-abstract_uiltdl_dzf2xi.svg">
+  </div>
+</section>
+
+      </div><!-- #content -->
+      <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 order-lg-2">
+        <div class="row footer-links-container">
+          <div class="footer-link-group-y order-1 mb-7 mb-sm-0">
+            <div class="font-weight-bold text-uppercase mb-3 footer-title">
+              Platform
+            </div>
+    
+            <ul class="footer-ll">
+              <li>
+                <a href="https://hevodata.com/pipeline/">
+                  Product
+                </a>
+              </li>
+
+              <li>
+                <a href="https://hevodata.com/integrations/pipeline/">
+                  Integrations
+                </a>
+                <span class="badge-type d-none d-md-inline-block ml-4">NEW</span>
+              </li>
+
+              <li>
+                <a href="https://hevodata.com/pricing/pipeline/">
+                  Pricing
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.hevodata.com/signup/?step=email">
+                  Free Trial
+                </a>
+              </li>
+
+              <li>
+                <a href="https://changelog.hevodata.com/">
+                  Changelog
+                </a>
+              </li>
+
+              <li>
+                <a href="https://docs.hevodata.com/upcoming-features/">
+                  Upcoming Features</a>
+                
+              </li>
+
+              <li>
+                <a href="https://status.hevodata.com/">
+                  Status
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="footer-link-group-y order-2  mb-7 mb-sm-0">
+            <div class="font-weight-bold text-uppercase mb-3 footer-title">
+              Concepts
+            </div>
+    
+            <ul class="footer-ll">
+              <li><a href="https://hevodata.com/blog/what-is-etl-tool/">ETL</a></li>
+              <li><a href="https://hevodata.com/blog/amazon-redshift-data-warehouse/">Amazon Redshift</a></li>
+              <li><a href="https://hevodata.com/blog/google-bigquery-data-warehouse/">Google BigQuery</a></li>
+              <li><a href="https://hevodata.com/blog/snowflake-data-warehouse/">Snowflake</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-link-group-y order-3">
+            <div class="font-weight-bold text-uppercase mb-3 footer-title">
+              Comparison Guides
+            </div>
+    
+            <ul class="footer-ll">
+              <li><a href="https://hevodata.com/blog/best-etl-tools-data-warehouse/">ETL Tools</a></li>
+              <li><a href="https://hevodata.com/blog/data-pipeline-tools-list/">Data Pipeline Tools</a></li>
+              <li><a href="https://hevodata.com/blog/data-integration-tools/">Data Integration Tools</a></li>
+              <li><a href="https://hevodata.com/blog/redshift-vs-bigquery/">Redshift vs BigQuery</a></li>
+              <li><a href="https://hevodata.com/learn/google-bigquery-vs-snowflake-comparison/">BigQuery vs Snowflake</a></li>
+              <li><a href="https://hevodata.com/blog/snowflake-vs-redshift/">Snowflake vs Redshift</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-link-group-y order-4">
+            <div class="font-weight-bold text-uppercase mb-3 footer-title">
+              Tutorials
+            </div>
+    
+            <ul class="footer-ll">
+              <li><a href="https://hevodata.com/blog/amazon-redshift-etl/">Redshift ETL</a></li>
+              <li><a href="https://hevodata.com/blog/bigquery-best-practices-etl/">BigQuery ETL</a></li>
+              <li><a href="https://hevodata.com/learn/snowflake-etl-tools/">Snowflake ETL</a></li>
+              <li><a href="https://hevodata.com/learn/change-data-capture-cdc-etl/">Change Data Capture</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-8 offset-lg-4 order-lg-3">
+        <div class="news-strip mt-lg-6 d-inline-flex">
+          <span class="badge mr-2">Write for hevo</span>
+          <span>You can contribute any number of in-depth posts on all things data.
+            <a href="https://community.hevodata.com/write-for-hevo" class="ml-1 font-weight-bold" data-track-click="Write For Hevo Know More Cick" data-track-category="Blog Footer">Know More</a>
+          </span>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 order-lg-1">
+        <div class="footer-bottom">
+          <div class="d-flex align-items-center align-items-lg-start flex-row flex-lg-column px-3 px-md-0">
+            <img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/logo-black_oybxu1.svg" class="footer-logo mr-7 mb-lg-7">
+            <div class="social-block d-flex align-items-center">
+              <a class="footer-foal-icon" id="tswt" href="https://twitter.com/HevoData">
+                <span class="hevo-web-icon hevo-twitter"></span>
+              </a>
+              <a class="footer-foal-icon ml-3" id="lskdn" href="https://www.linkedin.com/company/hevodata">
+                <span class="hevo-web-icon hevo-linkedin"></span>
+              </a>
+            </div>
+          </div>
+
+          <span class="text-center mt-3 mt-sm-0">
+            © Hevo Data Inc. 2022. All Rights Reserved.
+          </span>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</footer>
+      <div class="modal fade video-modal" id="preview_video_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-player-id="preview_video_player">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img class="close-icon" data-dismiss="modal" aria-label="Close" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/close-white_aakthq_cwg6pm.svg">
+      <div class="modal-body text-center">
+        <div class="embed-responsive embed-responsive-16by10">
+          <iframe id="preview_video_player" class="youtube-iframe embed-responsive-item" allowfullscreen="" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/saved_resource.html">
+          </iframe>
+        </div>
+
+        <a class="btn btn-primary mt-3 preview-modal-free-trial" data-track-click="Free Trial" data-track-category="Blog Video Modal Free Trial" href="https://hevodata.com/signup?step=email">
+          Free Trial
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="modal fade" id="guide_form_modal" tabindex="-1" role="dialog" aria-hidden="true">
+
+  <div class="modal-dialog d-flex align-items-center modal-md" role="document">
+    <div class="modal-content">  
+      <img class="close-icon" data-dismiss="modal" aria-label="Close" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/close-grey_a4wzsp.svg">
+
+      <div class="modal-body">
+        <h2 class="guide-form-heading text-center mb-4">I want to read this e-book</h2>
+
+        <form class="guide-form" novalidate="" autocomplete="off" data-factors-bind="true">
+          <div class="form-group">
+            <label class="control-label">Name*</label>
+
+            <div class="input-group input-group--bordered mb-3">
+              <input name="name" type="text" class="form-control form-control-sm input-tooltip" placeholder="Your name" aria-label="Your name" required="">
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="name" data-default-error-title="Please provide your name.">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Company*</label>
+
+            <div class="input-group input-group--bordered mb-3">
+              <input name="company-name" type="text" class="form-control form-control-sm input-tooltip" placeholder="Your Company" aria-label="Your Company" required="">
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="company-name" data-default-error-title="Please provide your company name.">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Designation* <span class="h6 font-weight-normal">(Select the one that most closely resembles your work.)</span></label>
+
+            <div class="input-group input-group--bordered">
+              <select class="custom-select custom-select-sm form-control" id="designation" name="designation" required="">
+                <option value="">Please Select</option>
+                
+                                  <option value="data_engineer">Data Engineer/Data Engineer Lead</option> 
+                                  <option value="data_analyst">Data Analyst/Analytics Lead</option> 
+                                  <option value="data_scientist">Data Scientist/Data Science Lead</option> 
+                                  <option value="analytics_engineer">Analytics Engineer</option> 
+                                  <option value="founder">Founder/CXO</option> 
+                                  <option value="programmer">Developer/Programmer/Lead</option> 
+                                  <option value="marketer">Marketer/Marketing Lead</option> 
+                                  <option value="other">Other</option> 
+                                
+              </select>
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="designation" data-default-error-title="Please select a designation">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group d-none user-designation-wrapper">
+            <label class="control-label">Your Designation*</label>
+
+            <div class="input-group input-group--bordered">
+              <input name="user-designation" type="text" class="form-control form-control-sm user-designation" placeholder="Enter your designation" aria-label="Designation">
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="user-designation" data-default-error-title="Please provide your designation">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Business Email*</label>
+
+            <div class="input-group input-group--bordered email-control mb-3">
+              <input name="email" type="email" class="form-control form-control-sm input-tooltip" placeholder="Your Email Address" aria-label="Your Email Address" required="">
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="email" data-default-error-title="Enter a valid email.">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="form-group phone-wrapper d-none">
+            <label class="control-label">Phone Number</label>
+         
+            <div class="input-group input-group--bordered">
+              <select class="custom-select custom-select-sm form-control" id="phone_code" name="phone_code"></select>
+
+              <span class="divider">|</span>
+              <input name="phone_number" type="text" class="form-control form-control-sm input-tooltip" placeholder="Your phone number" aria-label="Your Phone Number">
+
+              <div class="input-group-append">
+                <span class="hevo-web-icon hevo-error-circle input-group-glyph form-error-glyph" data-placement="bottom" data-form-error-tooltip="phone_number" data-default-error-title="Please provide valid Phone Number">
+                </span>
+              </div>
+
+            </div>            
+          </div>
+
+          <div class="text-center pt-3">
+            <button type="submit" class="btn btn-primary btn-sm download-btn" disabled="" data-factors-bind="true">
+              <span class="btn-main-body">Download Now</span>
+              <img class="btn-loading-indicator" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/btn-secondary-loading_ifbmq0.svg">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+          </div><!-- #page -->
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XTBDP3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com-->
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/api.min.js.download" data-account="83943" data-user="74633" async=""></script>
+<!-- / OptinMonster --><script type="text/javascript" id="dcl_comments-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"hevo-learn"};
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.16"},"disqusIdentifier":"131118 https:\/\/hevodata.com\/learn\/?p=131118","disqusShortname":"hevo-learn","disqusTitle":"Running Lambda Express Apps: Going Serverless","disqusUrl":"https:\/\/hevodata.com\/learn\/lambda-express\/","postId":"131118"};
+var dclCustomVars = {"dcl_progress_text":"Loading..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/embed-count-scroll.min.js.download" id="dcl_comments-js"></script>
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/jquery.min.js.download" id="jquery-footer-js"></script>
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/tracking-utils.js.download" id="wp-hevo-starter-tracking-utils-js"></script>
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/lottie.min.js.download" id="wp-hevo-starter-bodymovin-js"></script>
+<script type="text/javascript" src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/application.2b8d8aceb2a07942.js.download" id="wp-hevo-starter-application-js"></script>
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script>		<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":131118,"object_key":"post","object_type":"post","term_ids":[800,1574,37,2785,3168,1850,3,1575,2830],"wp_json":"https:\/\/hevodata.com\/learn\/wp-json"};</script>
+		  
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","3042478099207429");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3042478099207429&amp;ev=PageView&amp;noscript=1"></noscript>
+<img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/adsct" height="1" width="1" style="display: none;"><img src="./Running Lambda Express Apps_ Going Serverless - Learn _ Hevo_files/adsct(1)" height="1" width="1" style="display: none;"></body></html>
